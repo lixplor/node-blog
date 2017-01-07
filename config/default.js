@@ -6,5 +6,5 @@ module.exports = {
        key:'nblog',
        maxAge:1000 * 60 * 60 * 1
     },
-    mongodb:'mongodb:localhost:27017/nblog'    // mongodb连接配置
+    mongodb:'mongodb://localhost:27017/nblog'    // mongodb连接配置
 };
