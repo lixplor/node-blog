@@ -3,3 +3,8 @@ node_modules
 
 # images
 public/img/*
+
+#config/*
+#!config/default.*
+npm-debug.log
+coverage

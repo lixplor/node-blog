@@ -2,10 +2,11 @@
 
 module.exports = {
     logReq:function logReq(req, res, next) {
-        console.log('req=');
+        console.log('--------------Request-------------');
         console.log(req.params);
         console.log(req.fields);
         console.log(req.files);
+        console.log();
         next();
     }
 };

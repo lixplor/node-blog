@@ -68,7 +68,7 @@ router.post('/', checkNotLogin, function(req, res, next) {
     UserModel.create(user)
         .then(function(result) {
             // 此user时插入mongodb后的值, 包含_id
-            user = result;
+            user = result.ops[0];
             // 将用户信息存入session, 注意要删除密码
             delete user.password;
             req.session.user = user;
