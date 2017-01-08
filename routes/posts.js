@@ -10,7 +10,7 @@ var checkLogin = require('../middlewares/check-user').checkLogin;
 // 没有querystring时获取所有用户文章
 // ?author=xxx获取指定用户文章
 router.get('/', function(req, res, next) {
-    res.send(req.flash());
+    res.render('posts');
 });
 
 // GET /posts/create 访问发表文章页面
